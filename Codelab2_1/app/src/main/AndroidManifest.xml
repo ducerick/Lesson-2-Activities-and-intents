@@ -10,7 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Codelab2_1">
         <activity
+            android:name=".SecondActivity"
+            android:exported="false"
+            android:label="SecondActivity"
+            android:parentActivityName=".MainActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.codelab2_1.MainActivity"/>
+        </activity>
+
+
+
+        <activity
             android:name=".MainActivity"
+            android:label="MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
